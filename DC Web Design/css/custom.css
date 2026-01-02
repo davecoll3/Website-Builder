@@ -91,7 +91,23 @@ button {
 }
 
 #banner {
+    position: relative;
     background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+#banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.48);
+    z-index: 0;
+}
+
+#banner > .container {
+    position: relative;
+    z-index: 1;
 }
 
 /********** banner **********/
