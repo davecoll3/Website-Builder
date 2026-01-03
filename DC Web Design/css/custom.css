@@ -90,14 +90,14 @@ button {
     object-position: center;
 }
 
-#banner {
+.section-dark-overlay {
     position: relative;
     background-size: cover;
     background-position: center;
     overflow: hidden;
 }
 
-#banner::before {
+.section-dark-overlay::before {
     content: "";
     position: absolute;
     inset: 0;
@@ -105,7 +105,7 @@ button {
     z-index: 0;
 }
 
-#banner > .container {
+.section-dark-overlay > .container {
     position: relative;
     z-index: 1;
 }
@@ -166,10 +166,6 @@ button {
 }
 
 /********** contact **********/
-#contact {
-    background-size: cover;
-}
-
 #contact ul li {
     padding: 3px 0;
 }
@@ -180,9 +176,9 @@ button {
 
 #contact form input,
 #contact form textarea {
-    background: transparent;
+    background: #ffffff;
     border: 1px solid #00FFAD;
-    color: #ffffff;
+    color: #192440;
 }
 
 /********** copyright **********/
