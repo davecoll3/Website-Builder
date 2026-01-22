@@ -142,11 +142,11 @@ button {
     max-width: 480px;
 }
 
-#feature-first {
+.jumbotron.feature-first {
     background: linear-gradient(168deg, #ffffff 55%, #00FFAD 0);
 }
 
-#feature-end {
+.jumbotron.feature-mid-end  {
     background: #00FFAD;
 }
 
@@ -179,6 +179,38 @@ button {
     background: #ffffff;
     border: 1px solid #00FFAD;
     color: #192440;
+}
+
+.honeypot-field {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.contact-message {
+    opacity: 0;
+    max-height: 0;
+    margin-top: 0 !important;
+    overflow: hidden;
+    transform: translateY(-6px);
+    transition: opacity 0.25s ease, transform 0.25s ease, max-height 0.25s ease, margin-top 0.25s ease;
+}
+
+.contact-message.is-visible {
+    opacity: 1;
+    max-height: 200px;
+    margin-top: 0.5rem !important;
+    transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .contact-message {
+        transition: none;
+        transform: none;
+    }
 }
 
 /********** copyright **********/
