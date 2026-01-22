@@ -73,6 +73,7 @@
       setMessageVisible(error, false);
 
       form.classList.add("was-validated");
+      form.classList.add("submit-attempted");
       fields.forEach(updateFieldState);
 
       if (!form.checkValidity()) {

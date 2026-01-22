@@ -164,6 +164,7 @@
                                 autocomplete="name"
                                 required
                             >
+                            <div class="invalid-feedback">Please enter your name.</div>
                             </div>
 
                             <div class="form-group col-md-6">
@@ -177,6 +178,7 @@
                                 autocomplete="email"
                                 required
                             >
+                            <div class="invalid-feedback">Please enter a valid email address.</div>
                             </div>
                         </div>
 
@@ -190,6 +192,7 @@
                             placeholder="Message..."
                             required
                             ></textarea>
+                            <div class="invalid-feedback">Please enter a message.</div>
                         </div>
 
                         <div class="form-group honeypot-field" aria-hidden="true">
@@ -252,7 +255,7 @@
     </div>
     
     <!-- AOS -->
-    <script src="js/aos.min.js"></script>
+    <script src="js/aos.js"></script>
     <script>
       AOS.init({
       });

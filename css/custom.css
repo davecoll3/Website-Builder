@@ -9,6 +9,11 @@ img {
     max-width: 100%;
 }
 
+body:not(.aos-init) [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+}
+
 a,
 button {
     cursor: pointer;
@@ -196,6 +201,17 @@ button {
     background: #ffffff;
     border: 1px solid #00FFAD;
     color: #192440;
+}
+
+#contact form .invalid-feedback {
+    display: none;
+    color: #e0e0e0;
+    font-size: 0.9em;
+    font-weight: 700;
+}
+
+#contact form.submit-attempted .form-control.is-invalid ~ .invalid-feedback {
+    display: block;
 }
 
 .honeypot-field {
