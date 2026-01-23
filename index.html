@@ -1,34 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- meta -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Bootstrap Template Atlas</title>
-    <meta name="description" content="Free bootstrap template Atlas">
-    <link rel="icon" href="/assets/images/favicons/favicon-32x32.webp" sizes="32x32" type="image/webp">
-    <!-- custom.css -->
-    <link rel="stylesheet" href="css/custom.css">
-    <!-- bootstrap.min.css -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-	<!-- font-awesome -->
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-    
-    <!-- AOS -->
-    <link rel="stylesheet" href="css/aos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional website builder services offering clean, affordable, and responsive websites for individuals and small businesses.">
 
     <title>Website Builder Services - Clean, Professional, Affordable Websites</title>
-    <meta name="description" content="Professional website building services for individuals, freelancers, and small businesses. Clean, responsive designs without jargon or ongoing fees. Contact me to get started.">
-    
+
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- Font Awesome (preconnect + stylesheet) -->
+    <link rel="preconnect" href="/assets/font-awesome-4.7.0" crossorigin>
+    <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+
+
     <!-- favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.webp">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.webp">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.webp">
     <link rel="manifest" href="/site.webmanifest">
-    <!-- favicons end -->
 </head>
 
 <body>
     <main id="main-content">
+
     <!-- banner -->
     <div class="jumbotron jumbotron-fluid section-dark-overlay banner" id="banner">
         <div class="container text-center text-md-left">
@@ -45,7 +41,8 @@
             </a>
         </div>
     </div>
-    <!-- feature (skew background) -->
+
+    <!-- feature #1 responsive design -->
     <div class="jumbotron jumbotron-fluid feature feature-first">
         <div class="container my-5">
             <div class="row justify-content-between text-center text-md-left">
@@ -61,7 +58,8 @@
             </div>
         </div>
     </div>
-    <!-- feature (green background) -->
+
+    <!-- feature #2 client projects -->
     <div class="jumbotron jumbotron-fluid feature feature-mid-end">
         <div class="container">
             <div class="row justify-content-between text-center text-md-left">
@@ -83,7 +81,8 @@
             </div>
         </div>
     </div>
-    <!-- feature (skew background) -->
+
+    <!-- feature #3 advice and assistance -->
     <div class="jumbotron jumbotron-fluid feature feature-mid-end">
         <div class="container my-3">
             <div class="row justify-content-between text-center text-md-left">
@@ -109,6 +108,8 @@
     <div class="container my-5 py-2" id="price-table">
         <h2 class="text-center font-weight-bold d-block mb-3">Pricing</h2>
         <div class="row">
+
+            <!-- single page pricing -->
             <div data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true" class="col-md-4 text-center py-4 mt-5">
                 <h3 class="h4 my-4">Single Page Website</h3>
                 <p class="font-weight-bold">FROM <span class="display-2 font-weight-bold">£150</span></p>
@@ -120,6 +121,8 @@
                     <li>Ideal for a simple, professional online presence</li>
                 </ul>
             </div>
+
+            <!-- multi page pricing -->
             <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" class="col-md-4 text-center py-4 mt-5 rounded" id="price-table__premium">
                 <h3 class="h4 my-4">Multi Page Website</h3>
                 <p class="font-weight-bold">FROM <span class="display-2 font-weight-bold">£300</span></p>
@@ -131,6 +134,8 @@
                     <li>Focused on clear, professional presentation</li>
                 </ul>
             </div>
+
+            <!-- optional extras pricing -->
             <div data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true" class="col-md-4 text-center py-4 mt-5">
                 <h3 class="h4 my-4">Optional Extras</h3>
                 <p class="font-weight-bold">FROM <span class="display-2 font-weight-bold">£20</span></p>
@@ -155,6 +160,8 @@
                         Get in touch if you have a project in mind.
                     </p>
                 </div>
+
+                <!-- contact form -->
                 <div class="col-md-6">
                     <form
                         id="contact-form"
@@ -205,6 +212,7 @@
                             <div class="invalid-feedback">Please enter a message.</div>
                         </div>
 
+                        <!-- honeypot field -->
                         <div class="form-group honeypot-field" aria-hidden="true">
                             <label for="company">Company</label>
                             <input
@@ -217,6 +225,7 @@
                             >
                         </div>
 
+                        <!-- success and error messages -->
                         <p
                             id="contact-success"
                             class="text-white mt-2 contact-message"
@@ -235,6 +244,7 @@
                             Sorry, something went wrong. Please try again.
                         </p>
 
+                        <!-- submit button -->
                         <button
                             type="submit"
                             class="btn font-weight-bold atlas-cta atlas-cta-wide cta-green my-3"
@@ -264,13 +274,7 @@
         </div>
     </div>
     
-    <!-- AOS -->
-    <script src="js/aos.js"></script>
-    <script>
-      AOS.init({
-      });
-    </script>
-    <script src="js/contact-form.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
