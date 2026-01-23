@@ -1,0 +1,289 @@
+/* ==========================================================================
+   DC Web Design - Custom Styles
+   Sections:
+   1) Base + utilities
+   2) Components
+   3) Sections
+   4) Forms
+   5) Footer
+   6) Responsive tweaks
+   ========================================================================== */
+
+/* 1) Base + utilities */
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+    width: 100%;
+}
+
+h2 {
+    font-size: 2.8rem !important;
+    font-weight: 700;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a,
+button {
+    cursor: pointer;
+}
+
+.jumbotron {
+    margin-bottom: 0 !important;
+}
+
+/* 2) Components */
+.atlas-cta {
+    border-radius: 22px !important;
+    padding: 12px 30px !important;
+    font-weight: 700;
+    transition: .3s ease-in-out !important;
+}
+
+.atlas-cta:hover {
+    text-decoration: none;
+    transform: translateY(-5px);
+}
+
+.atlas-cta-wide {
+    width: 100%;
+}
+
+.cta-green {
+    background: #00FFAD;
+    color: #192440;
+}
+
+.cta-green:hover {
+    color: #ffffff;
+    background: #00e69c;
+}
+
+/* Bubble photo */
+.bubble-photo {
+    width: 100%;
+    max-width: 420px;
+    aspect-ratio: 4 / 3;
+    margin: 0 auto;
+
+    overflow: hidden;
+
+    /* Organic “bubble” shape */
+    border-radius: 68% 42% 55% 45% / 60% 50% 52% 50%;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 18px 40px rgba(0, 0, 0, 0.18),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.35);
+}
+
+.bubble-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.section-dark-overlay {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.section-dark-overlay::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.48);
+    z-index: 0;
+}
+
+.section-dark-overlay > .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* 3) Sections */
+/* Banner – mobile first */
+.banner {
+  background-image: url("../images/banner-tech-mobile.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Tablet & desktop */
+@media (min-width: 768px) {
+  .banner {
+    background-image: url("../images/banner-tech-desktop.webp");
+  }
+}
+
+/* Feature sections */
+.feature img {
+    width: 100%;
+    max-width: 480px;
+}
+
+.project-link {
+    color: #000000;
+    font-weight: 700;
+    display: inline-block;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.project-link:hover,
+.project-link:focus {
+    color: #333333;
+    text-decoration: none;
+    transform: scale(1.03);
+}
+
+.jumbotron.feature-first {
+    background: linear-gradient(168deg, #ffffff 55%, #00FFAD 0);
+}
+
+.jumbotron.feature-mid-end  {
+    background: #00FFAD;
+}
+
+/* Price table */
+#price-table {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+}
+
+#price-table__premium {
+    background: #192440;
+    color: #ffffff;
+}
+
+#price-table ul li {
+    padding: 5px 0;
+}
+
+/* 4) Forms */
+/* Contact */
+#contact form {
+    color: #00FFAD;
+}
+
+#contact form input,
+#contact form textarea {
+    background: #ffffff;
+    border: 1px solid #00FFAD;
+    color: #192440;
+}
+
+#contact form .invalid-feedback {
+    display: none;
+    color: #e0e0e0;
+    font-size: 0.9em;
+    font-weight: 700;
+}
+
+#contact form.submit-attempted .form-control.is-invalid ~ .invalid-feedback {
+    display: block;
+}
+
+/* Contact section – mobile first */
+.contact {
+  background-image: url("../images/contact-bg-mobile.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Tablet & desktop */
+@media (min-width: 768px) {
+  .contact {
+    background-image: url("../images/contact-bg-desktop.webp");
+  }
+}
+
+.honeypot-field {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.contact-message {
+    opacity: 0;
+    max-height: 0;
+    margin-top: 0 !important;
+    overflow: hidden;
+    transform: translateY(-6px);
+    transition: opacity 0.25s ease, transform 0.25s ease, max-height 0.25s ease, margin-top 0.25s ease;
+}
+
+.contact-message.is-visible {
+    opacity: 1;
+    max-height: 200px;
+    margin-top: 0.5rem !important;
+    transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .contact-message {
+        transition: none;
+        transform: none;
+    }
+}
+
+/* 5) Footer */
+#copyright {
+    background: #192440;
+    padding: 2rem 3rem;
+}
+
+#copyright #social-media a {
+    width: 40px;
+    height: 40px;
+    border-radius: 99%;
+    background: #ffffff;
+    transition: .4s ease;
+}
+
+#copyright #social-media a i {
+    color: #192440;
+    font-size: 1.2rem;
+    line-height: 40px;
+}
+
+#copyright #social-media a:hover {
+    background: #00FFAD;
+}
+
+#copyright #social-media a:hover i {
+    color: #ffffff;
+}
+
+/* 6) Responsive tweaks */
+@media (max-width: 575px) {
+    #banner h1 {
+        font-size: 3.6rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .bubble-photo {
+        max-width: 360px;
+    }
+}
