@@ -2,6 +2,9 @@
 //# sourceMappingURL=aos.js.map
 
 AOS.init({
+  disable: function () {
+    return window.innerWidth < 576;
+  },
 });
 
 (function () {

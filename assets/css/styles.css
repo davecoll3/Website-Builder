@@ -118,6 +118,15 @@ button {
 }
 
 /* 3) Sections */
+/* Banner */
+.banner h1 {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    font-size: clamp(3.2rem, 15vw, 4.5rem);
+    line-height: 1.1;
+}
+
 /* Banner – mobile first */
 .banner {
   background-image: url("../images/banner-tech-mobile.webp");
@@ -277,13 +286,25 @@ button {
 
 /* 6) Responsive tweaks */
 @media (max-width: 575px) {
-    #banner h1 {
-        font-size: 3.6rem;
-    }
 }
 
 @media (max-width: 991px) {
     .bubble-photo {
         max-width: 360px;
+    }
+}
+
+@media (max-width: 575px) {
+    #price-table {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+
+    #price-table .row > div {
+        margin-top: 0 !important;
+    }
+
+    #price-table h2 {
+        margin-bottom: 0 !important;
     }
 }
