@@ -141,6 +141,21 @@ button {
     max-width: 80px;
 }
 
+/* Banner – mobile first */
+.banner {
+  background-image: url("/assets/images/banner-tech-mobile.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Tablet & desktop */
+@media (min-width: 768px) {
+  .banner {
+    background-image: url("/assets/images/banner-tech-desktop.webp");
+  }
+}
+
 /********** feature (skew background) **********/
 .feature img {
     width: 100%;
@@ -212,6 +227,21 @@ button {
 
 #contact form.submit-attempted .form-control.is-invalid ~ .invalid-feedback {
     display: block;
+}
+
+/* Contact section – mobile first */
+.contact {
+  background-image: url("/assets/images/contact-bg-mobile.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Tablet & desktop */
+@media (min-width: 768px) {
+  .contact {
+    background-image: url("/assets/images/contact-bg-desktop.webp");
+  }
 }
 
 .honeypot-field {
